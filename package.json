@@ -1,0 +1,12 @@
+{
+  "name": "UnitTesting",
+  "version": "1.0.0",
+  "description": "my first Unittesting ",
+  "dependencies": {
+    "chai": "*",
+    "istanbul": "^0.4.5",
+    "sinon": "*"
+  },
+  "test-unit": "NODE_ENV=test mocha '/**/*.spec.js'"
+ istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")
+}
